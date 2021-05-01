@@ -14,6 +14,7 @@ app.get('/', function (req, res) {
 })
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
+require('./routes')(app);
 
 
 
